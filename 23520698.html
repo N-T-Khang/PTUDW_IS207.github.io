@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang cá nhân - Nguyễn Thành Khang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#intro">Giới thiệu</a> |
+        <a href="#contact">Gửi thông tin</a>
+    </nav>
+            <section id="intro" class ="section-box">  
+                <h1 class="badge-h1">Giới thiệu bản thân</h1>
+            
+            <div class="avatar-center">
+                <img src="image.webp" alt="Ảnh của tôi" class="avatar-img">
+            </div>
+
+            <section class="section-box">
+            <h2 class="badge-h2">Thông tin cơ bản</h2>
+            <ul>
+                <li><strong>Tên:</strong> Nguyễn Thành Khang</li>
+                <li><strong>Năm sinh:</strong> 2005</li>
+                <li><strong>Chuyên ngành:</strong> Hệ thống thông tin</li>
+            </ul>
+            </section> 
+            <section class="section-box">
+            <h2 class="badge-h2">Sở thích</h2><br>
+                <section class="section-box">
+                <h3 class="badge-h3">Món ăn</h3>
+                <ol type ="1">
+                    <li>Cơm mẹ nấu</li>
+                    <li>Sầu riêng</li>
+                    <li>Trà sữa</li>
+                </ol>
+              </section>  
+
+            <section class="section-box">
+                <h3 class="badge-h3">Giải trí</h3>
+                <div class="flex-row">
+                    <div >
+                    <h4>Trò chơi</h4>
+                    <ul>
+                        <li>Punishing Gray Raven</li>
+                        <li>Pokemon Unite</li>
+                        <li>Tom and Jerry: Chase</li>
+                    </ul>
+                    </div>
+
+                    <div >
+                    <h4>Bài nhạc yêu thích</h4>
+                    <ul>
+                        <li>Đếm ngày xa em - Only C / Lou Hoàng</li>
+                        <li>Một nhà - Da LAB</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                </section>
+            <section class="section-box">
+                <h3 class="badge-h3">Mục tiêu của bản thân</h3> 
+                     <table>
+                    <tr>
+                        <th>Mục tiêu</th>
+                        <th>Thời hạn</th>
+                        <th>Hoàn thành</th>
+                    </tr>
+                    <tr>
+                        <td>Hoàn thành tốt môn học kì 1 </td>
+                        <td>27/1/2026</td>
+                        <td> <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Cải thiện sức khỏe</td>
+                        <td>24/9/2025</td>
+                        <td> <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Nắm vững ngoại ngữ</td>
+                        <td>20/3/2026</td>
+                        <td><input type="checkbox"></td>
+                    </tr>   
+                </table>
+            </section>      
+        </section>
+    <section id="contact" class="section-box">
+        <h1 class="badge-h1">Gửi thông tin và giao lưu cùng tôi</h1>
+        <<form action="submit_form.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính:</label>
+                <div>
+                <input type="radio" name="gender" value="male"> Nam
+                <input type="radio" name="gender" value="female"> Nữ
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích:</label>
+                <div>
+                <input type="checkbox" name="interests" value="music"> Nghe nhạc
+                <input type="checkbox" name="interests" value="swimming"> Bơi lội
+                <input type="checkbox" name="interests" value="travel"> Du lịch
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Ngành:</label>
+                <select id="major" name="major">
+                <option value="IT">Công nghệ thông tin</option>
+                <option value="IS">Hệ thống thông tin</option>
+                <option value="CS">Khoa học máy tính</option>
+                <option value="DS">Khoa học dữ liệu</option>
+                <option value="SE">Kỹ thuật phần mềm</option>
+                </select>
+            </div>
+
+            <button type="submit">Gửi</button>
+            </form>
+
+    </section>
+</body>
+</html>
