@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trang cá nhân - Nguyễn Thành Khang</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="js" href="script.js">
 </head>
 <body>
     <nav>
@@ -15,7 +16,8 @@
                 <h1 class="badge-h1">Giới thiệu bản thân</h1>
             
             <div class="avatar-center">
-                <img src="image.webp" alt="Ảnh của tôi" class="avatar-img">
+                <img src="image.webp" alt="Ảnh của tôi" class="avatar">
+               
             </div>
 
             <section class="section-box">
@@ -70,37 +72,37 @@
                     <tr>
                         <td>Hoàn thành tốt môn học kì 1 </td>
                         <td>27/1/2026</td>
-                        <td> <input type="checkbox"></td>
+                        <td> <input class="target" type="checkbox"></td>
                     </tr>
                     <tr>
                         <td>Cải thiện sức khỏe</td>
                         <td>24/9/2025</td>
-                        <td> <input type="checkbox"></td>
+                        <td> <input class="target" type="checkbox"></td>
                     </tr>
                     <tr>
                         <td>Nắm vững ngoại ngữ</td>
                         <td>20/3/2026</td>
-                        <td><input type="checkbox"></td>
+                        <td><input class ="target" type="checkbox"></td>
                     </tr>   
                 </table>
             </section>      
         </section>
     <section id="contact" class="section-box">
         <h1 class="badge-h1">Gửi thông tin và giao lưu cùng tôi</h1>
-        <<form action="submit_form.php" method="post" class="contact-form">
+        <form id="myForm" action="submit_form.php" method="post" class="contact-form">
             <div class="form-group">
                 <label for="name">Họ và tên:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" >
             </div>
 
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" >
             </div>
 
             <div class="form-group">
                 <label for="message">Tin nhắn:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" ></textarea>
             </div>
 
             <div class="form-group">
@@ -135,5 +137,7 @@
             </form>
 
     </section>
+    <button id="backToTop">Lên đầu trang</button>
+    <script src="script.js"></script>
 </body>
 </html>
